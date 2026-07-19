@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harshavardhan Shet — Generative AI / ML Engineer</title>
+  <meta name="description" content="Generative AI / ML Engineer specializing in LLM deployment across the full stack — from cloud DGX servers to on-device edge hardware — with a focus on edge optimization and automotive AI.">
+  <meta property="og:title" content="Harshavardhan Shet — Generative AI / ML Engineer">
+  <meta property="og:description" content="Edge LLM specialist: on-device LLM deployment, quantization, and automotive AI across NVIDIA Jetson, Qualcomm Snapdragon, and Google Cloud TPU.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/texture-circuit.web.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- ============ LOADING SCREEN ============ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-lines mono">
+        <p data-line>&gt; Loading model weights…</p>
+        <p data-line>&gt; Quantizing to INT8…</p>
+        <p data-line>&gt; Compiling for edge…</p>
+        <p data-line>&gt; Allocating NPU…</p>
+        <p data-line class="loader-ok">&gt; READY — 32 tok/s</p>
+      </div>
+      <div class="loader-bar"><span id="loader-progress"></span></div>
+    </div>
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <a class="nav-logo mono" href="#hero">HS<span class="accent">_</span></a>
+    <nav aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#projects">Work</a>
+      <a href="#awards">Awards</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+  <!-- ============ 1. HERO ============ -->
+  <section id="hero" class="hero">
+    <video class="hero-video" src="assets/hero-loop.mp4" autoplay muted loop playsinline aria-hidden="true"></video>
+    <canvas id="neural-canvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <p class="hero-kicker mono">// generative ai · edge · automotive</p>
+      <h1 class="hero-name">Harshavardhan Shet</h1>
+      <p class="hero-title mono" aria-label="Generative AI Engineer, Edge LLM Specialist, On-Device AI, Automotive AI">
+        <span id="typewriter">Generative AI Engineer</span><span class="caret">▌</span>
+      </p>
+      <p class="hero-tagline">I build and ship generative AI everywhere it runs — from cloud DGX servers to on-device edge hardware.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary" data-magnetic>View Work</a>
+        <a href="#contact" class="btn btn-ghost" data-magnetic>Get in Touch</a>
+      </div>
+    </div>
+    <a class="scroll-indicator mono" href="#about" aria-label="Scroll to About section">
+      <span class="stream" aria-hidden="true">
+        <span>0</span><span>1</span><span>1</span><span>0</span><span>1</span>
+      </span>
+      scroll
+    </a>
+  </section>
+
+  <!-- ============ 2. ABOUT ============ -->
+  <section id="about" class="section about tex-circuit">
+    <div class="section-head">
+      <p class="section-index mono">01</p>
+      <h2>About</h2>
+    </div>
+    <div class="about-grid">
+      <div class="portrait holo-frame" data-reveal>
+        <img src="assets/profile-suit.jpg" alt="Portrait of Harshavardhan Shet"
+             onerror="this.closest('.portrait').classList.add('no-img'); this.remove();">
+        <div class="portrait-fallback" aria-hidden="true">
+          <span class="mono">HS</span>
+          <small class="mono">// gen_ai.engineer</small>
+        </div>
+        <i class="holo-corner tl"></i><i class="holo-corner tr"></i>
+        <i class="holo-corner bl"></i><i class="holo-corner br"></i>
+      </div>
+      <div class="about-copy" data-reveal>
+        <p>Generative AI / ML Engineer with 2 years of experience building and deploying production-grade AI systems, specializing in on-device LLM deployment, edge optimization, and applied ML for automotive use cases. Currently a Gen AI Engineer at Tata Consultancy Services, working in the IoTDe Automotive Gen AI Center of Excellence (R&amp;D), Bengaluru, since June 2024. Experienced across the full model lifecycle — fine-tuning, quantization, compilation, and multi-hardware deployment (NVIDIA Jetson/DGX, Qualcomm Snapdragon, Google Cloud TPU) — with a strong focus on privacy-preserving, cloud-independent solutions.</p>
+        <div class="stats" role="list">
+          <div class="stat" role="listitem"><span class="stat-num mono" data-count="2">0</span><span class="stat-label">yrs experience</span></div>
+          <div class="stat" role="listitem"><span class="stat-num mono" data-count="32" data-suffix=" tok/s">0</span><span class="stat-label">LLM on Snapdragon NPU</span></div>
+          <div class="stat" role="listitem"><span class="stat-num mono" data-count="37" data-suffix=" ms">0</span><span class="stat-label">edge inference</span></div>
+          <div class="stat" role="listitem"><span class="stat-num mono" data-count="130" data-suffix=" inf/s">0</span><span class="stat-label">on TPU</span></div>
+          <div class="stat" role="listitem"><span class="stat-num mono" data-count="94" data-suffix="%">0</span><span class="stat-label">segmentation precision</span></div>
+        </div>
+        <div class="chip3d-wrap" aria-hidden="true">
+          <div class="chip3d">
+            <div class="chip-face chip-top"><span class="mono">EDGE-AI</span></div>
+            <div class="chip-face chip-front"></div>
+            <div class="chip-face chip-back"></div>
+            <div class="chip-face chip-left"></div>
+            <div class="chip-face chip-right"></div>
+            <div class="chip-face chip-bottom"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. PROJECTS ============ -->
+  <section id="projects" class="projects">
+    <div class="section-head in-projects">
+      <p class="section-index mono">02</p>
+      <h2>Experience / Projects</h2>
+    </div>
+    <div class="projects-track">
+
+      <article class="scene" data-scene>
+        <div class="scene-visual" aria-hidden="true">
+          <svg viewBox="0 0 400 200" class="viz viz-wave">
+            <rect x="40" y="40" width="320" height="120" rx="10" class="viz-outline"/>
+            <polyline class="viz-stroke wave-line" points="70,100 100,100 112,70 124,130 136,85 148,115 160,100 190,100 202,60 214,140 226,75 238,125 250,100 290,100 302,80 314,120 326,100 340,100"/>
+            <circle cx="70" cy="100" r="4" class="viz-dot"/>
+            <circle cx="340" cy="100" r="4" class="viz-dot"/>
+          </svg>
+        </div>
+        <div class="scene-body">
+          <p class="scene-index mono">01 / 07</p>
+          <h3>In-Vehicle Virtual Assistant <span class="scene-sub">NVIDIA Jetson Orin</span></h3>
+          <ul>
+            <li>Fully offline voice assistant controlling AC, fan, and sunroof via natural language, with an on-board LLM running on llama.cpp.</li>
+            <li>Local STT/TTS across shared GPU/CPU with agent-based workflows.</li>
+            <li>LLM intent understanding for free-form commands.</li>
+          </ul>
+          <p class="tags mono"><span>llama.cpp</span><span>Jetson Orin</span><span>STT/TTS</span><span>Agents</span><span>Offline</span></p>
+        </div>
+      </article>
+
+      <article class="scene" data-scene>
+        <div class="scene-visual" aria-hidden="true">
+          <svg viewBox="0 0 400 200" class="viz viz-route">
+            <path class="viz-faint" d="M20,180 L380,180 M20,140 L380,140 M20,100 L380,100 M60,20 L60,190 M140,20 L140,190 M260,20 L260,190 M340,20 L340,190"/>
+            <path class="viz-stroke route-line" d="M30,170 C90,160 90,110 150,105 S240,140 280,95 S350,50 375,35"/>
+            <circle cx="30" cy="170" r="5" class="viz-dot"/>
+            <circle cx="375" cy="35" r="5" class="viz-dot pulse"/>
+          </svg>
+        </div>
+        <div class="scene-body">
+          <p class="scene-index mono">02 / 07</p>
+          <h3>Personalized Driving Experience System <span class="scene-sub">Audi POC</span></h3>
+          <ul>
+            <li>Suggests seat/comfort, climate, routes, and media at ignition from learned behavior; synthetic driving-routine data from OpenStreetMap + LLMs.</li>
+            <li>Hybrid neural network + RL model, ~85% accuracy.</li>
+            <li>Quantized edge deployment, 37 ms/inference, all data on-device.</li>
+          </ul>
+          <p class="award-flag mono">★ Best Team Award</p>
+          <p class="tags mono"><span>RL</span><span>OpenStreetMap</span><span>Quantization</span><span>On-Device</span></p>
+        </div>
+      </article>
+
+      <article class="scene tex-gpu" data-scene>
+        <div class="scene-visual" aria-hidden="true">
+          <svg viewBox="0 0 400 200" class="viz viz-migrate">
+            <rect x="30" y="60" width="90" height="90" rx="8" class="viz-outline"/>
+            <text x="75" y="112" class="viz-text mono">GPU</text>
+            <rect x="280" y="60" width="90" height="90" rx="8" class="viz-outline accent-outline"/>
+            <text x="325" y="112" class="viz-text mono">TPU</text>
+            <g class="data-blocks">
+              <rect x="140" y="95" width="14" height="14" class="viz-block b1"/>
+              <rect x="180" y="95" width="14" height="14" class="viz-block b2"/>
+              <rect x="220" y="95" width="14" height="14" class="viz-block b3"/>
+            </g>
+          </svg>
+        </div>
+        <div class="scene-body">
+          <p class="scene-index mono">03 / 07</p>
+          <h3>GPU-to-TPU Migration <span class="scene-sub">Waymo</span></h3>
+          <ul>
+            <li>Migrated a multi-model camera KPI tool from NVIDIA DGX to Google Cloud TPU VMs; conversion + quantization scripts for RF-DETR and YOLO.</li>
+            <li>130 inferences/sec on multi-pod TPU with mAP-based KPI evaluation.</li>
+            <li>Vertex AI LLM auto-summaries; Dockerized delivery.</li>
+          </ul>
+          <p class="tags mono"><span>TPU</span><span>RF-DETR</span><span>YOLO</span><span>Vertex AI</span><span>Docker</span></p>
+        </div>
+      </article>
+
+      <article class="scene" data-scene>
+        <div class="scene-visual" aria-hidden="true">
+          <svg viewBox="0 0 400 200" class="viz viz-tokens">
+            <rect x="150" y="40" width="100" height="150" rx="12" class="viz-outline"/>
+            <rect x="170" y="60" width="60" height="40" rx="4" class="viz-faint-rect"/>
+            <g class="token-stream mono">
+              <text x="200" y="30" class="tok t1">the</text>
+              <text x="260" y="55" class="tok t2">edge</text>
+              <text x="120" y="70" class="tok t3">runs</text>
+              <text x="290" y="110" class="tok t4">llama</text>
+              <text x="90" y="130" class="tok t5">fast</text>
+            </g>
+          </svg>
+        </div>
+        <div class="scene-body">
+          <p class="scene-index mono">04 / 07</p>
+          <h3>On-Device LLM <span class="scene-sub">Qualcomm Snapdragon Gen 3</span></h3>
+          <ul>
+            <li>Llama 3.2 8B fully on-device via Genie SDK + QNN; owned conversion, INT8 quantization, compilation, and NPU profiling.</li>
+            <li>32 tokens/sec, first-token latency under 200 ms.</li>
+            <li>Live demo at the Qualcomm AI Summit.</li>
+          </ul>
+          <p class="award-flag mono">★ On-the-Spot Team Award</p>
+          <p class="tags mono"><span>Genie SDK</span><span>QNN</span><span>INT8</span><span>NPU</span><span>Llama 3.2 8B</span></p>
+        </div>
+      </article>
+
+      <article class="scene" data-scene>
+        <div class="scene-visual" aria-hidden="true">
+          <svg viewBox="0 0 400 200" class="viz viz-lens">
+            <circle cx="200" cy="100" r="75" class="viz-outline"/>
+            <circle cx="200" cy="100" r="50" class="viz-faint-circle"/>
+            <circle cx="200" cy="100" r="22" class="viz-faint-circle"/>
+            <path class="viz-mask m1" d="M160,60 q18,-12 34,2 q10,12 -6,20 q-20,8 -28,-22z"/>
+            <path class="viz-mask m2" d="M235,120 q16,-6 20,10 q2,14 -14,12 q-14,-4 -6,-22z"/>
+            <path class="viz-mask m3" d="M170,135 q10,-8 20,0 q6,8 -4,14 q-14,4 -16,-14z"/>
+          </svg>
+        </div>
+        <div class="scene-body">
+          <p class="scene-index mono">05 / 07</p>
+          <h3>Camera Lens Obstruction Segmentation <span class="scene-sub">Warehouse Monitoring</span></h3>
+          <ul>
+            <li>DINOv2 backbone + ResNet encoder-decoder detecting water droplets, dust, and sun glare; augmentation to beat limited data.</li>
+            <li>94% precision (+11 pts over baseline).</li>
+            <li>Quantized for edge with dynamic batching + parallel preprocessing.</li>
+          </ul>
+          <p class="tags mono"><span>DINOv2</span><span>ResNet</span><span>Segmentation</span><span>Edge</span></p>
+        </div>
+      </article>
+
+      <article class="scene" data-scene>
+        <div class="scene-visual" aria-hidden="true">
+          <svg viewBox="0 0 400 200" class="viz viz-docs">
+            <rect x="60" y="50" width="80" height="105" rx="6" class="viz-outline doc-src"/>
+            <path class="viz-faint" d="M75,75 h50 M75,90 h50 M75,105 h35 M75,120 h50"/>
+            <g class="tc-cards">
+              <rect x="250" y="40" width="100" height="34" rx="5" class="viz-block c1"/>
+              <rect x="250" y="84" width="100" height="34" rx="5" class="viz-block c2"/>
+              <rect x="250" y="128" width="100" height="34" rx="5" class="viz-block c3"/>
+            </g>
+            <path class="viz-stroke" d="M145,100 h40 m10,0 h40" stroke-dasharray="6 6"/>
+          </svg>
+        </div>
+        <div class="scene-body">
+          <p class="scene-index mono">06 / 07</p>
+          <h3>LLM-Powered Test Case Generation <span class="scene-sub">Hardware OEM</span></h3>
+          <ul>
+            <li>Upload requirement docs → select requirements → generate test cases via a 3-stage agentic pipeline (domain-rules vector DB, retrieval agent, generation agent).</li>
+            <li>NVIDIA Nemotron on DGX A100s on-prem.</li>
+            <li>Adopted by multiple customers; recognized as a top team offering.</li>
+          </ul>
+          <p class="tags mono"><span>Agentic AI</span><span>Vector DB</span><span>Nemotron</span><span>DGX A100</span></p>
+        </div>
+      </article>
+
+      <article class="scene tex-hud" data-scene>
+        <div class="scene-visual" aria-hidden="true">
+          <svg viewBox="0 0 400 200" class="viz viz-tree">
+            <g class="tree-side">
+              <circle cx="100" cy="45" r="8" class="viz-dot"/>
+              <circle cx="60" cy="100" r="6" class="viz-dot"/>
+              <circle cx="140" cy="100" r="6" class="viz-dot"/>
+              <circle cx="40" cy="150" r="5" class="viz-dot"/>
+              <circle cx="85" cy="150" r="5" class="viz-dot"/>
+              <circle cx="120" cy="150" r="5" class="viz-dot"/>
+              <circle cx="160" cy="150" r="5" class="viz-dot"/>
+              <path class="viz-stroke" d="M100,45 L60,100 M100,45 L140,100 M60,100 L40,150 M60,100 L85,150 M140,100 L120,150 M140,100 L160,150"/>
+            </g>
+            <g class="chunk-side">
+              <rect x="250" y="45" width="110" height="18" rx="3" class="viz-faint-rect"/>
+              <rect x="250" y="75" width="110" height="18" rx="3" class="viz-faint-rect"/>
+              <rect x="250" y="105" width="110" height="18" rx="3" class="viz-faint-rect"/>
+              <rect x="250" y="135" width="110" height="18" rx="3" class="viz-faint-rect"/>
+            </g>
+            <text x="100" y="185" class="viz-text mono small">PageIndex</text>
+            <text x="305" y="185" class="viz-text mono small">RAG</text>
+          </svg>
+        </div>
+        <div class="scene-body">
+          <p class="scene-index mono">07 / 07</p>
+          <h3>PageIndex vs. RAG <span class="scene-sub">Retrieval Research</span></h3>
+          <ul>
+            <li>Comparative study of graph/tree indexing vs. traditional RAG on retrieval accuracy, chunking quality, and cross-chunk context.</li>
+            <li>PageIndex won on accuracy at the cost of extra LLM calls.</li>
+            <li>Pioneered swapping the ChatGPT API for a locally hosted llama.cpp server via a custom wrapper — no known prior public implementation.</li>
+          </ul>
+          <p class="tags mono"><span>PageIndex</span><span>RAG</span><span>llama.cpp</span><span>Retrieval</span></p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="mini-card glass" data-reveal>
+      <p class="mono mini-kicker">// bonus round</p>
+      <h3>Phishing Domain Detection <span class="scene-sub">Smart India Hackathon National Finalist, New Delhi (Dec 2023)</span></h3>
+      <p>~50,000-domain scraped dataset · custom ANN · 88% accuracy · deployed for real-time inference.</p>
+    </div>
+  </section>
+
+  <!-- ============ 4. PUBLICATION ============ -->
+  <section id="publication" class="section publication tex-gpu">
+    <div class="section-head">
+      <p class="section-index mono">03</p>
+      <h2>Publication</h2>
+    </div>
+    <div class="pub-grid">
+      <div class="paper-card glass" data-reveal data-tilt>
+        <p class="mono paper-kicker">// peer-reviewed</p>
+        <h3>“Speech Denoising and Transcription to Improve Audio Communication using Deep Learning”</h3>
+        <p class="paper-meta mono">IJIRCCE · Vol. 12, Issue 4 · April 2024 · Impact Factor 8.379<br>DOI: 10.15680/IJIRCCE.2024.1204224</p>
+        <p class="paper-summary">CNN-based denoising on STFT features + unsupervised speaker diarization + ASR transcription for offline call-centre audio; evaluated with SNR, PESQ, and WER.</p>
+      </div>
+      <div class="pub-visual" data-reveal aria-hidden="true">
+        <svg viewBox="0 0 320 240" class="viz">
+          <text x="30" y="36" class="viz-text small mono">noisy input</text>
+          <polyline class="viz-faint denoise-noisy" points="20,80 32,60 44,95 56,55 68,88 80,64 92,100 104,52 116,90 128,66 140,96 152,58 164,86 176,62 188,98 200,54 212,92 224,68 236,94 248,60 260,84 272,66 284,90 300,72"/>
+          <path class="viz-stroke" d="M160,116 v28 m-8,-10 l8,10 l8,-10" fill="none"/>
+          <text x="30" y="180" class="viz-text small mono">denoised</text>
+          <polyline class="viz-stroke denoise-clean" points="20,210 50,208 80,200 110,214 140,204 170,212 200,202 230,210 260,205 300,208"/>
+          <g class="mono">
+            <text x="250" y="36" class="viz-text small">SNR</text>
+            <text x="250" y="52" class="viz-text small">PESQ</text>
+            <text x="250" y="68" class="viz-text small">WER</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. AWARDS & CERTIFICATIONS ============ -->
+  <section id="awards" class="section awards">
+    <div class="section-head">
+      <p class="section-index mono">04</p>
+      <h2>Awards &amp; Certifications</h2>
+    </div>
+    <div class="gallery" tabindex="0" aria-label="Awards gallery, scroll horizontally">
+      <figure class="award-card glass" data-tilt>
+        <img src="assets/best-team-award.jpg" alt="Best Team Award certificate — TCS Gems, awarded 9 December 2025 for the Audi Personalized Driving Experience System" loading="lazy">
+        <figcaption>
+          <h3>Best Team Award</h3>
+          <p class="mono">TCS Gems · 09-Dec-2025</p>
+          <p>For the Audi Personalized Driving Experience System.</p>
+        </figcaption>
+      </figure>
+      <figure class="award-card glass" data-tilt>
+        <img src="assets/on-the-spot-award.jpg" alt="On-the-Spot Team Award certificate — TCS Gems, awarded 14 April 2026 for the Snapdragon on-device LLM deployment" loading="lazy">
+        <figcaption>
+          <h3>On-the-Spot (Team) Award</h3>
+          <p class="mono">TCS Gems · 14-Apr-2026</p>
+          <p>For the Snapdragon on-device LLM deployment.</p>
+        </figcaption>
+      </figure>
+      <figure class="award-card award-card-text glass" data-tilt>
+        <div class="award-text-visual" aria-hidden="true">
+          <span class="mono award-glyph">◆</span>
+          <span class="mono award-month">JUNE 2026</span>
+        </div>
+        <figcaption>
+          <h3>Team of the Month</h3>
+          <p class="mono">June 2026</p>
+          <p>For organizing the in-lab demo for the NVIDIA CXO behind the launch of TCS's Autonomous Engineering Lab (Industrial AI Solutions Lab), Powered by NVIDIA, at the Global Axis campus in Bengaluru — contributing to stronger business deals.</p>
+          <a class="award-source mono" href="https://www.tcs.com/who-we-are/newsroom/press-release/tcs-launches-industrial-ai-solutions-lab-bengaluru-powered-nvidia" target="_blank" rel="noopener">↗ tcs.com · press release</a>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="cert-chips" role="list">
+      <span class="chip mono" role="listitem">IBM Data Science Professional Certificate</span>
+      <span class="chip mono" role="listitem">Machine Learning Specialization (Stanford &amp; DeepLearning.AI)</span>
+      <span class="chip mono" role="listitem">Programming, Data Structures &amp; Algorithms in Python (NPTEL)</span>
+    </div>
+    <div class="honors mono" role="list">
+      <span role="listitem">Smart India Hackathon Finalist</span>
+      <span role="listitem">Best Outgoing Student (Batch 2020–24)</span>
+      <span role="listitem">State-Level Coding Competition Winner</span>
+      <span role="listitem">Resource Person, 3-day Python workshop</span>
+    </div>
+  </section>
+
+  <!-- ============ 6. SKILLS ============ -->
+  <section id="skills" class="section skills tex-hud">
+    <div class="section-head">
+      <p class="section-index mono">05</p>
+      <h2>Skills</h2>
+    </div>
+    <div class="skills-layout">
+      <canvas id="skills-canvas" aria-hidden="true"></canvas>
+      <div class="skills-legend" id="skills-legend">
+        <div class="skill-group" data-group="0">
+          <h3 class="mono">Languages</h3>
+          <p>Python · C++ · Java</p>
+        </div>
+        <div class="skill-group" data-group="1">
+          <h3 class="mono">Frameworks</h3>
+          <p>PyTorch · TensorFlow · HuggingFace · llama.cpp · LangChain · LangGraph · OpenCV · Pandas · NumPy · CUDA</p>
+        </div>
+        <div class="skill-group" data-group="2">
+          <h3 class="mono">LLM &amp; AI</h3>
+          <p>fine-tuning · Agentic AI · RAG · PageIndexing · prompt engineering · INT4/INT8 quantization · ONNX · TensorRT · semantic segmentation</p>
+        </div>
+        <div class="skill-group" data-group="3">
+          <h3 class="mono">Edge &amp; Hardware</h3>
+          <p>NVIDIA Jetson Orin · DRIVE AGX · DGX · Qualcomm HDK8650 (Snapdragon 8 Gen 3)</p>
+        </div>
+        <div class="skill-group" data-group="4">
+          <h3 class="mono">Tools &amp; DevOps</h3>
+          <p>Docker · Git · VS Code · Jupyter · Django · SQL · Linux · DeepStream · SNPE · QNN · Genie SDK</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7. EDUCATION ============ -->
+  <section id="education" class="section education">
+    <div class="section-head">
+      <p class="section-index mono">06</p>
+      <h2>Education</h2>
+    </div>
+    <div class="edu-card glass" data-reveal>
+      <p class="mono edu-kicker">// 2020 – 2024</p>
+      <h3>B.E. Computer Science</h3>
+      <p>Bapuji Institute of Engineering and Technology</p>
+      <p class="mono edu-cgpa">CGPA 8.0/10</p>
+    </div>
+  </section>
+
+  <!-- ============ 8. CONTACT ============ -->
+  <section id="contact" class="section contact tex-circuit">
+    <div class="terminal glass" data-reveal>
+      <div class="terminal-bar">
+        <i></i><i></i><i></i>
+        <span class="mono">harsha@edge:~</span>
+      </div>
+      <div class="terminal-body mono">
+        <p>&gt; <span id="contact-typed"></span><span class="caret">▌</span></p>
+        <div class="contact-links">
+          <a href="mailto:harshavardhansshet02@gmail.com" data-magnetic><span class="mono">email</span> harshavardhansshet02@gmail.com</a>
+          <a href="tel:+917618753240" data-magnetic><span class="mono">phone</span> +91-7618753240</a>
+          <a href="https://github.com/harsha6602" target="_blank" rel="noopener" data-magnetic><span class="mono">github</span> github.com/harsha6602</a>
+          <a href="https://linkedin.com/in/harshavardhan-shet" target="_blank" rel="noopener" data-magnetic><span class="mono">linkedin</span> linkedin.com/in/harshavardhan-shet</a>
+        </div>
+        <a class="btn btn-primary resume-btn" href="assets/resume.pdf" download data-magnetic>Download Résumé</a>
+        <p class="signoff">Built with Three.js, deployed at the edge.</p>
+      </div>
+    </div>
+    <footer class="footer mono">© 2026 Harshavardhan Shet.</footer>
+  </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script type="importmap">
+    {"imports": {"three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}
+  </script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
